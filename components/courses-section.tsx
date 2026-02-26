@@ -66,7 +66,67 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mb-8 md:mb-10">
+        <motion.article
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.65 }}
+          className="rounded-2xl border p-5 md:p-7 mb-8 md:mb-10"
+          style={{ backgroundColor: "#F8FBF3", borderColor: "#CDD8BE" }}
+        >
+          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4" style={{ color: "#354024" }}>
+            🎶✨ TUYỂN SINH LỚP HỌC ĐÀN TRANH ✨🎶
+          </h3>
+
+          <div className="mt-4 space-y-2 font-sans text-base" style={{ color: "#3F4C30" }}>
+            <p>Bạn yêu thích âm nhạc dân tộc?</p>
+            <p>Bạn muốn tìm một nhạc cụ vừa duyên dáng vừa giàu cảm xúc?</p>
+            <p>Hãy đến với lớp học đàn tranh - nơi gìn giữ và lan tỏa vẻ đẹp của âm nhạc truyền thống Việt Nam!</p>
+          </div>
+
+          <div className="mt-5 space-y-5 font-sans" style={{ color: "#3F4C30" }}>
+            <div>
+              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Nội dung khóa học</h4>
+              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+                <li>Làm quen và nắm vững kỹ thuật cơ bản trên đàn tranh.</li>
+                <li>Luyện ngón, nhạc lý, tiết tấu.</li>
+                <li>Học các làn điệu dân ca, nhạc truyền thống và những bản nhạc hiện đại được chuyển soạn cho đàn tranh.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Đối tượng</h4>
+              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+                <li>Lớp học linh hoạt - phù hợp với mọi lứa tuổi, không cần có kiến thức âm nhạc trước.</li>
+                <li>Học viên muốn học từ cơ bản hoặc nâng cao.</li>
+                <li>Có nhiều phương thức học tập như: 1 kèm 1 tại nhà hoặc gộp lớp (khi có trên 2 học viên có nhu cầu).</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Ưu điểm của lớp học</h4>
+              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+                <li>Giáo viên có kinh nghiệm biểu diễn và giảng dạy.</li>
+                <li>Giáo trình dễ hiểu, phù hợp với từng trình độ.</li>
+                <li>Không khí học tập thân thiện, truyền cảm hứng.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Thông tin đăng ký</h4>
+              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+                <li>📍Địa điểm: phường Hải Dương, Thành phố Hải Phòng (Thành phố Hải Dương cũ)</li>
+                <li>Liên hệ: [Số điện thoại/Zalo: 0984542058].</li>
+              </ul>
+            </div>
+
+            <p className="pt-1 text-[1rem] leading-relaxed" style={{ color: "#354024" }}>
+              👉 Hãy để tiếng đàn tranh đưa bạn đến gần hơn với âm nhạc Việt Nam - dịu dàng, sâu lắng mà đầy sức sống.
+            </p>
+          </div>
+        </motion.article>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {courses.map((course, index) => (
             <motion.div
               key={course.id}
@@ -132,66 +192,6 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
             </motion.div>
           ))}
         </div>
-
-        <motion.article
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65 }}
-          className="rounded-2xl border p-5 md:p-7"
-          style={{ backgroundColor: "#F8FBF3", borderColor: "#CDD8BE" }}
-        >
-          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4" style={{ color: "#354024" }}>
-            🎶✨ TUYỂN SINH LỚP HỌC ĐÀN TRANH ✨🎶
-          </h3>
-
-          <div className="mt-4 space-y-2 font-sans text-base" style={{ color: "#3F4C30" }}>
-            <p>Bạn yêu thích âm nhạc dân tộc?</p>
-            <p>Bạn muốn tìm một nhạc cụ vừa duyên dáng vừa giàu cảm xúc?</p>
-            <p>Hãy đến với lớp học đàn tranh - nơi gìn giữ và lan tỏa vẻ đẹp của âm nhạc truyền thống Việt Nam!</p>
-          </div>
-
-          <div className="mt-5 space-y-5 font-sans" style={{ color: "#3F4C30" }}>
-            <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Nội dung khóa học</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
-                <li>Làm quen và nắm vững kỹ thuật cơ bản trên đàn tranh.</li>
-                <li>Luyện ngón, nhạc lý, tiết tấu.</li>
-                <li>Học các làn điệu dân ca, nhạc truyền thống và những bản nhạc hiện đại được chuyển soạn cho đàn tranh.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Đối tượng</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
-                <li>Lớp học linh hoạt - phù hợp với mọi lứa tuổi, không cần có kiến thức âm nhạc trước.</li>
-                <li>Học viên muốn học từ cơ bản hoặc nâng cao.</li>
-                <li>Có nhiều phương thức học tập như: 1 kèm 1 tại nhà hoặc gộp lớp (khi có trên 2 học viên có nhu cầu).</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Ưu điểm của lớp học</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
-                <li>Giáo viên có kinh nghiệm biểu diễn và giảng dạy.</li>
-                <li>Giáo trình dễ hiểu, phù hợp với từng trình độ.</li>
-                <li>Không khí học tập thân thiện, truyền cảm hứng.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Thông tin đăng ký</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
-                <li>📍Địa điểm: phường Hải Dương, Thành phố Hải Phòng (Thành phố Hải Dương cũ)</li>
-                <li>Liên hệ: [Số điện thoại/Zalo: 0984542058].</li>
-              </ul>
-            </div>
-
-            <p className="pt-1 text-[1rem] leading-relaxed" style={{ color: "#354024" }}>
-              👉 Hãy để tiếng đàn tranh đưa bạn đến gần hơn với âm nhạc Việt Nam - dịu dàng, sâu lắng mà đầy sức sống.
-            </p>
-          </div>
-        </motion.article>
       </div>
     </section>
   )
