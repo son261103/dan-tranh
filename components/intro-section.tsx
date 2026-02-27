@@ -38,51 +38,51 @@ export function IntroSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
         >
-          <motion.div variants={fadeUp} className="grid grid-cols-2 gap-3 h-[520px]">
-            <div className="col-span-1 row-span-2 relative overflow-hidden rounded-2xl group">
+          <motion.div variants={fadeUp} className="order-2 lg:order-1 grid grid-cols-[1.08fr_0.92fr] sm:grid-cols-2 grid-rows-[1.02fr_0.98fr] sm:grid-rows-2 gap-3 h-[500px] sm:h-[520px]">
+            <div className="col-span-1 row-span-2 relative overflow-hidden rounded-[1.35rem] sm:rounded-2xl group">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-qeg4GmaOzsypf2R1XIfSHPZ79TRLUu.jpeg"
                 alt="Nghệ sĩ đàn tranh trong tà áo dài trắng"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 640px) 56vw, (max-width: 768px) 50vw, 50vw"
               />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
             </div>
 
-            <div className="col-span-1 relative overflow-hidden rounded-2xl group" style={{ height: "250px" }}>
+            <div className="col-span-1 relative overflow-hidden rounded-[1.35rem] sm:rounded-2xl group h-full">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xu8SUGBq07VWF5r8IFu2qRJq0aIWE3.png"
                 alt="Biểu diễn trên sân khấu"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 25vw"
+                sizes="(max-width: 640px) 44vw, (max-width: 768px) 25vw, 25vw"
               />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
             </div>
 
-            <div className="col-span-1 relative overflow-hidden rounded-2xl group" style={{ height: "250px" }}>
+            <div className="col-span-1 relative overflow-hidden rounded-[1.35rem] sm:rounded-2xl group h-full">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-eHRkajEqCKNI4K5dz1wla2vOAQxmHH.png"
                 alt="Bằng tốt nghiệp đại học âm nhạc"
                 fill
                 className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 25vw"
+                sizes="(max-width: 640px) 44vw, (max-width: 768px) 25vw, 25vw"
               />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
             </div>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="flex flex-col gap-5 md:gap-6">
+          <motion.div variants={fadeUp} className="order-1 lg:order-2 flex flex-col gap-4 md:gap-6">
             <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em]" style={{ color: "#4C3D19" }}>
               Giới thiệu
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-extrabold leading-tight text-balance" style={{ color: "#354024" }}>
               Lộ Trình Bài Bản
               <br />
-              Nuôi Dưỡng Cảm Âm
+              Nuôi Dưỡng Tâm Hồn Âm Nhạc
             </h2>
             <p className="font-sans text-base leading-relaxed" style={{ color: "#5A6645" }}>
               Lộ trình học được thiết kế bài bản và thực tiễn, giúp học viên phát triển kỹ thuật, nhạc lý, tiết tấu và khả năng biểu đạt cảm xúc qua từng tác phẩm đàn tranh.

@@ -22,7 +22,7 @@ function ZaloIcon({ className }: { className?: string }) {
         fill="white"
         fontSize="16"
         fontWeight="bold"
-        fontFamily="sans-serif"
+        fontFamily="var(--font-main), 'Oleo Script', sans-serif"
       >
         Z
       </text>
@@ -61,7 +61,7 @@ export function FloatingButtons() {
             fill="white"
             fontSize="12"
             fontWeight="800"
-            fontFamily="Arial, sans-serif"
+            fontFamily="var(--font-main), 'Oleo Script', sans-serif"
           >
             Zalo
           </text>

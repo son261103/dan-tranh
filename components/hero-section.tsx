@@ -46,12 +46,12 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
       />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-20 sm:pt-16 sm:pb-16 md:py-0 text-left">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-16 sm:pt-16 sm:pb-16 md:py-0 text-left">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="mx-auto flex flex-col md:mx-0 md:max-w-[500px] lg:max-w-[560px] md:ml-2 lg:ml-4 xl:ml-8"
+          className="w-full flex flex-col md:max-w-[500px] lg:max-w-[560px] md:ml-2 lg:ml-4 xl:ml-8"
         >
           <div className="flex items-center gap-3 mb-4 sm:mb-5">
             <motion.div
@@ -69,16 +69,19 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
           </div>
 
           <h1
-            className="font-serif text-[2.65rem] sm:text-5xl md:text-[4rem] lg:text-[4.8rem] font-extrabold leading-[1.02] sm:leading-[1.08] tracking-tight text-balance mb-4 md:mb-6"
-            style={{ color: "#FFFFFF" }}
+            className="font-serif text-[clamp(2.2rem,8.6vw,2.6rem)] sm:text-5xl md:text-[4rem] lg:text-[4.8rem] font-extrabold leading-[1.32] sm:leading-[1.08] tracking-[0.02em] sm:tracking-[0.005em] text-balance mb-5 md:mb-6"
+            style={{ color: "#FFFFFF", fontKerning: "none" }}
           >
             Lớp Học Đàn Tranh
             <br />
-            <span style={{ color: "#DDEACF" }}>Giữ Hồn</span> Âm Nhạc <br className="hidden sm:block" />Dân Tộc
+            <span className="font-semibold pr-1.5" style={{ color: "#DDEACF" }}>
+              Giữ Hồn
+            </span>{" "}
+            Âm Nhạc <br className="hidden sm:block" />Dân Tộc
           </h1>
 
           <p
-            className="font-sans text-[1.02rem] sm:text-lg md:text-xl leading-relaxed mb-5 md:mb-10 font-light max-w-2xl mx-auto md:mx-0"
+            className="font-sans text-[1.02rem] sm:text-lg md:text-xl leading-[1.7] sm:leading-relaxed mb-5 md:mb-10 font-light max-w-2xl"
             style={{ color: "rgba(255,255,255,0.82)" }}
           >
             Học từ cơ bản đến nâng cao - Phù hợp mọi lứa tuổi
