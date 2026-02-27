@@ -32,7 +32,7 @@ function ZaloIcon({ className }: { className?: string }) {
 
 export function FloatingButtons() {
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-2.5 sm:gap-3 items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col gap-2.5 sm:gap-3 items-end">
       {/* Zalo button */}
       <motion.a
         href="https://zalo.me/0984542058"
