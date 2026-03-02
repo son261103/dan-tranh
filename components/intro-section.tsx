@@ -25,10 +25,10 @@ const stagger: Variants = {
 
 export function IntroSection() {
   return (
-    <section id="gioi-thieu" className="relative py-16 md:py-20 px-6 overflow-hidden" style={{ backgroundColor: "#F4F7EE" }}>
+    <section id="gioi-thieu" className="relative py-16 md:py-20 px-6 overflow-hidden" style={{ backgroundColor: "#F2F8FC" }}>
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-16"
-        style={{ background: "linear-gradient(180deg, rgba(53,64,36,0.15) 0%, rgba(53,64,36,0) 100%)" }}
+        style={{ background: "linear-gradient(180deg, rgba(100,49,62,0.16) 0%, rgba(100,49,62,0) 100%)" }}
         aria-hidden="true"
       />
 
@@ -49,7 +49,7 @@ export function IntroSection() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 56vw, (max-width: 768px) 50vw, 50vw"
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#64313E" }} />
             </div>
 
             <div className="col-span-1 relative overflow-hidden rounded-[1.35rem] sm:rounded-2xl group h-full">
@@ -60,7 +60,7 @@ export function IntroSection() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 44vw, (max-width: 768px) 25vw, 25vw"
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#64313E" }} />
             </div>
 
             <div className="col-span-1 relative overflow-hidden rounded-[1.35rem] sm:rounded-2xl group h-full">
@@ -71,20 +71,20 @@ export function IntroSection() {
                 className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 44vw, (max-width: 768px) 25vw, 25vw"
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#354024" }} />
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{ backgroundColor: "#64313E" }} />
             </div>
           </motion.div>
 
           <motion.div variants={fadeUp} className="order-1 lg:order-2 flex flex-col gap-4 md:gap-6">
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em]" style={{ color: "#4C3D19" }}>
+            <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em]" style={{ color: "#8B4A5A" }}>
               Giới thiệu
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-extrabold leading-tight text-balance" style={{ color: "#354024" }}>
+            <h2 className="font-serif text-4xl md:text-5xl font-extrabold leading-tight text-balance" style={{ color: "#64313E" }}>
               Lộ Trình Bài Bản
               <br />
               Nuôi Dưỡng Tâm Hồn Âm Nhạc
             </h2>
-            <p className="font-sans text-base leading-relaxed" style={{ color: "#5A6645" }}>
+            <p className="font-sans text-base leading-relaxed" style={{ color: "#486A7E" }}>
               Lộ trình học được thiết kế bài bản và thực tiễn, giúp học viên phát triển kỹ thuật, nhạc lý, tiết tấu và khả năng biểu đạt cảm xúc qua từng tác phẩm đàn tranh.
             </p>
 
@@ -96,14 +96,14 @@ export function IntroSection() {
               className="flex flex-col gap-2.5"
             >
               {skills.map((skill) => (
-                <li key={skill} className="flex items-start gap-3 font-sans text-[0.98rem] leading-[1.55]" style={{ color: "#3F4C30" }}>
-                  <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#4C3D19" }} aria-hidden="true" />
+                <li key={skill} className="flex items-start gap-3 font-sans text-[0.98rem] leading-[1.55]" style={{ color: "#5D3A46" }}>
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#8B4A5A" }} aria-hidden="true" />
                   {skill}
                 </li>
               ))}
             </motion.ul>
 
-            <div className="h-px w-16 mt-2" style={{ backgroundColor: "#4C3D19" }} />
+            <div className="h-px w-16 mt-2" style={{ backgroundColor: "#8B4A5A" }} />
           </motion.div>
         </motion.div>
       </div>

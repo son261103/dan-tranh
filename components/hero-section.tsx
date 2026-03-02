@@ -25,7 +25,7 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(10,26,18,0.8) 0%, rgba(10,24,18,0.45) 38%, rgba(10,24,18,0.2) 60%, rgba(10,24,18,0.72) 100%)",
+            "linear-gradient(180deg, rgba(38,20,27,0.82) 0%, rgba(47,26,34,0.52) 40%, rgba(57,39,47,0.24) 62%, rgba(38,20,27,0.75) 100%)",
         }}
         aria-hidden="true"
       />
@@ -33,7 +33,7 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(110deg, rgba(8,22,15,0.72) 0%, rgba(8,22,15,0.55) 35%, rgba(8,22,15,0.1) 63%, rgba(8,22,15,0) 82%)",
+            "linear-gradient(110deg, rgba(25,47,63,0.42) 0%, rgba(22,37,49,0.34) 36%, rgba(22,37,49,0.1) 63%, rgba(22,37,49,0) 82%)",
         }}
         aria-hidden="true"
       />
@@ -58,11 +58,11 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="h-[2px] w-12 sm:w-16 rounded-full bg-[#D6E4C7]"
+              className="h-[2px] w-12 sm:w-16 rounded-full bg-[#C1DBE8]"
             />
             <p
               className="font-sans text-[11px] sm:text-xs uppercase tracking-[0.28em] sm:tracking-[0.35em] font-semibold"
-              style={{ color: "#DDEACF" }}
+              style={{ color: "#D6EAF4" }}
             >
               Âm Nhạc Dân Tộc
             </p>
@@ -74,7 +74,7 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
           >
             Lớp Học Đàn Tranh
             <br />
-            <span className="font-semibold pr-1.5" style={{ color: "#DDEACF" }}>
+            <span className="font-semibold pr-1.5" style={{ color: "#C1DBE8" }}>
               Giữ Hồn
             </span>{" "}
             Âm Nhạc <br className="hidden sm:block" />Dân Tộc
@@ -90,8 +90,8 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
           <div className="hidden md:flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center md:justify-start items-center w-full max-w-md sm:max-w-none mx-auto md:mx-0 mt-2 sm:mt-0">
             <button
               onClick={onRegisterClick}
-              className="w-full sm:w-auto font-sans font-semibold text-[1.02rem] sm:text-base px-8 sm:px-9 py-2.5 sm:py-4 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_28px_rgba(221,234,207,0.35)] hover:scale-105 active:scale-95 tracking-wide"
-              style={{ backgroundColor: "#354024" }}
+              className="w-full sm:w-auto font-sans font-semibold text-[1.02rem] sm:text-base px-8 sm:px-9 py-2.5 sm:py-4 rounded-full text-white transition-all duration-300 hover:shadow-[0_0_28px_rgba(100,49,62,0.35)] hover:scale-105 active:scale-95 tracking-wide"
+              style={{ backgroundColor: "#64313E" }}
             >
               Đăng ký tư vấn ngay
             </button>
@@ -99,8 +99,8 @@ export function HeroSection({ onRegisterClick, onCoursesClick }: HeroSectionProp
               onClick={onCoursesClick}
               className="w-full sm:w-auto font-sans font-semibold text-[1.02rem] sm:text-base px-8 sm:px-9 py-2.5 sm:py-4 rounded-full transition-all duration-300 hover:bg-white/15 active:scale-95 border sm:border-2 backdrop-blur-sm tracking-wide"
               style={{
-                borderColor: "rgba(221,234,207,0.65)",
-                color: "#F4F7EE",
+                borderColor: "rgba(193,219,232,0.85)",
+                color: "#EAF5FB",
               }}
             >
               Xem khóa học

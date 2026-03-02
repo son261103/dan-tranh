@@ -22,7 +22,7 @@ const courses: CourseCard[] = [
     badge: "Guzheng",
     pricingOptions: [
       { label: "1:1 tại nhà học sinh", price: "300.000đ/buổi" },
-      { label: "Học tại nhà cô", price: "250.000đ/buổi" },
+      { label: "Học 1:1 tại nhà cô", price: "250.000đ/buổi" },
       { label: "Lớp ghép", price: "150.000đ/buổi" },
     ],
   },
@@ -34,7 +34,7 @@ const courses: CourseCard[] = [
     badge: "Truyền thống",
     pricingOptions: [
       { label: "1:1 tại nhà học sinh", price: "250.000đ/buổi" },
-      { label: "Học tại nhà cô", price: "200.000đ/buổi" },
+      { label: "Học 1:1 tại nhà cô", price: "200.000đ/buổi" },
       { label: "Lớp ghép", price: "100.000đ/buổi" },
     ],
   },
@@ -46,7 +46,7 @@ interface CoursesSectionProps {
 
 export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
   return (
-    <section id="khoa-hoc" className="py-14 md:py-16 px-4 sm:px-6" style={{ backgroundColor: "#ECF3E3" }}>
+    <section id="khoa-hoc" className="py-14 md:py-16 px-4 sm:px-6" style={{ backgroundColor: "#EAF4FA" }}>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -55,13 +55,13 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
           transition={{ duration: 0.7 }}
           className="text-center mb-8 md:mb-10"
         >
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] mb-4" style={{ color: "#4C3D19" }}>
+          <p className="font-sans text-xs font-semibold uppercase tracking-[0.3em] mb-4" style={{ color: "#8B4A5A" }}>
             Chương trình học
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-extrabold leading-tight text-balance" style={{ color: "#354024" }}>
+          <h2 className="font-serif text-4xl md:text-5xl font-extrabold leading-tight text-balance" style={{ color: "#64313E" }}>
             Các Khóa Học
           </h2>
-          <p className="font-sans text-base mt-4 max-w-2xl mx-auto leading-relaxed" style={{ color: "#5A6645" }}>
+          <p className="font-sans text-base mt-4 max-w-2xl mx-auto leading-relaxed" style={{ color: "#486A7E" }}>
             Mỗi khóa học gồm 20 buổi, thiết kế linh hoạt theo trình độ và nhu cầu của học viên.
           </p>
         </motion.div>
@@ -72,22 +72,22 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.65 }}
           className="rounded-2xl border p-5 md:p-7 mb-8 md:mb-10"
-          style={{ backgroundColor: "#F8FBF3", borderColor: "#CDD8BE" }}
+          style={{ backgroundColor: "#F7FBFE", borderColor: "#B7CFDC" }}
         >
-          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4" style={{ color: "#354024" }}>
+          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4" style={{ color: "#64313E" }}>
             🎶✨ TUYỂN SINH LỚP HỌC ĐÀN TRANH ✨🎶
           </h3>
 
-          <div className="mt-4 space-y-2 font-sans text-base" style={{ color: "#3F4C30" }}>
+          <div className="mt-4 space-y-3 font-sans text-[0.98rem] sm:text-base leading-7 sm:leading-relaxed" style={{ color: "#5D3A46" }}>
             <p>Bạn yêu thích âm nhạc dân tộc?</p>
             <p>Bạn muốn tìm một nhạc cụ vừa duyên dáng vừa giàu cảm xúc?</p>
             <p>Hãy đến với lớp học đàn tranh - nơi gìn giữ và lan tỏa vẻ đẹp của âm nhạc truyền thống Việt Nam!</p>
           </div>
 
-          <div className="mt-5 space-y-5 font-sans" style={{ color: "#3F4C30" }}>
+          <div className="mt-6 space-y-6 font-sans" style={{ color: "#5D3A46" }}>
             <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Nội dung khóa học</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+              <h4 className="font-semibold text-[1.02rem] sm:text-[1.05rem] mb-2.5" style={{ color: "#8B4A5A" }}>🌸 Nội dung khóa học</h4>
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-[0.98rem] leading-7 sm:leading-relaxed">
                 <li>Làm quen và nắm vững kỹ thuật cơ bản trên đàn tranh.</li>
                 <li>Luyện ngón, nhạc lý, tiết tấu.</li>
                 <li>Học các làn điệu dân ca, nhạc truyền thống và những bản nhạc hiện đại được chuyển soạn cho đàn tranh.</li>
@@ -95,17 +95,17 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Đối tượng</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+              <h4 className="font-semibold text-[1.02rem] sm:text-[1.05rem] mb-2.5" style={{ color: "#8B4A5A" }}>🌸 Đối tượng</h4>
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-[0.98rem] leading-7 sm:leading-relaxed">
                 <li>Lớp học linh hoạt - phù hợp với mọi lứa tuổi, không cần có kiến thức âm nhạc trước.</li>
                 <li>Học viên muốn học từ cơ bản hoặc nâng cao.</li>
-                <li>Có nhiều phương thức học tập như: 1 kèm 1 tại nhà hoặc gộp lớp (khi có trên 2 học viên có nhu cầu).</li>
+                <li>Có nhiều phương thức học tập như: 1 kèm 1 tại nhà hoặc gộp lớp ( khi có trên 2 học viên có nhu cầu)</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Ưu điểm của lớp học</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
+              <h4 className="font-semibold text-[1.02rem] sm:text-[1.05rem] mb-2.5" style={{ color: "#8B4A5A" }}>🌸 Ưu điểm của lớp học</h4>
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-[0.98rem] leading-7 sm:leading-relaxed">
                 <li>Giáo viên có kinh nghiệm biểu diễn và giảng dạy.</li>
                 <li>Giáo trình dễ hiểu, phù hợp với từng trình độ.</li>
                 <li>Không khí học tập thân thiện, truyền cảm hứng.</li>
@@ -113,15 +113,14 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-2" style={{ color: "#4C3D19" }}>🌸 Thông tin đăng ký</h4>
-              <ul className="list-disc pl-5 space-y-1.5 text-[0.98rem] leading-relaxed">
-                <li>📍Địa điểm: phường Hải Dương, Thành phố Hải Phòng (Thành phố Hải Dương cũ)</li>
+              <h4 className="font-semibold text-[1.02rem] sm:text-[1.05rem] mb-2.5" style={{ color: "#8B4A5A" }}>🌸 Giải đáp thắc mắc</h4>
+              <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-[0.98rem] leading-7 sm:leading-relaxed">
                 <li>Liên hệ: [Số điện thoại/Zalo: 0984542058].</li>
               </ul>
             </div>
 
-            <p className="pt-1 text-[1rem] leading-relaxed" style={{ color: "#354024" }}>
-              👉 Hãy để tiếng đàn tranh đưa bạn đến gần hơn với âm nhạc Việt Nam - dịu dàng, sâu lắng mà đầy sức sống.
+            <p className="pt-2 text-[1rem] sm:text-[1.05rem] leading-8 sm:leading-relaxed" style={{ color: "#64313E" }}>
+              👉 Hãy để tiếng đàn tranh đưa bạn đến gần hơn với âm nhạc Việt Nam – dịu dàng, sâu lắng mà đầy sức sống.
             </p>
           </div>
         </motion.article>
@@ -137,42 +136,42 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
               className="group relative flex flex-col rounded-2xl overflow-hidden border-2"
               style={{
                 backgroundColor: "#FFFFFF",
-                borderColor: "#C9D5B7",
-                boxShadow: "0 10px 28px rgba(53,64,36,0.08)",
+                borderColor: "#B7CFDC",
+                boxShadow: "0 10px 28px rgba(100,49,62,0.1)",
               }}
             >
-              <div className="h-1.5 w-full" style={{ background: "linear-gradient(90deg, #4C3D19, #354024)" }} />
+              <div className="h-1.5 w-full" style={{ background: "linear-gradient(90deg, #64313E, #C1DBE8)" }} />
 
               <div className="p-5 sm:p-6 md:p-7 flex flex-col flex-1">
                 <div className="mb-5">
                   <span
                     className="font-sans text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-                    style={{ backgroundColor: "#F1F5E9", color: "#4C3D19" }}
+                    style={{ backgroundColor: "#E7F2F8", color: "#8B4A5A" }}
                   >
                     {course.badge}
                   </span>
-                  <h3 className="font-serif text-[2rem] font-extrabold mt-3 leading-tight" style={{ color: "#354024" }}>
+                  <h3 className="font-serif text-[2rem] font-extrabold mt-3 leading-tight" style={{ color: "#64313E" }}>
                     {course.title}
                   </h3>
-                  <p className="font-sans text-sm mt-1 font-medium" style={{ color: "#4C3D19" }}>
+                  <p className="font-sans text-sm mt-1 font-medium" style={{ color: "#3F6D83" }}>
                     {course.subtitle} · {course.sessions} buổi/khóa
                   </p>
                 </div>
 
-                <div className="rounded-xl overflow-hidden mb-5 border" style={{ borderColor: "#C9D5B7" }}>
+                <div className="rounded-xl overflow-hidden mb-5 border" style={{ borderColor: "#B7CFDC" }}>
                   {course.pricingOptions.map((opt, i) => (
                     <div
                       key={opt.label}
                       className="flex items-center justify-between gap-3 px-4 py-3"
                       style={{
-                        backgroundColor: i % 2 === 0 ? "#F7FAF1" : "#FFFFFF",
-                        borderTop: i > 0 ? "1px solid #C9D5B7" : undefined,
+                        backgroundColor: i % 2 === 0 ? "#F4FAFE" : "#FFFFFF",
+                        borderTop: i > 0 ? "1px solid #B7CFDC" : undefined,
                       }}
                     >
-                      <span className="font-sans text-sm sm:text-base" style={{ color: "#5A6645" }}>
+                      <span className="font-sans text-sm sm:text-base" style={{ color: "#486A7E" }}>
                         {opt.label}
                       </span>
-                      <span className="font-sans font-bold text-[1.05rem] sm:text-[1.12rem]" style={{ color: "#354024" }}>
+                      <span className="font-sans font-bold text-[1.05rem] sm:text-[1.12rem]" style={{ color: "#64313E" }}>
                         {opt.price}
                       </span>
                     </div>
@@ -182,8 +181,8 @@ export function CoursesSection({ onRegisterClick }: CoursesSectionProps) {
                 <div className="mt-auto">
                   <button
                     onClick={() => onRegisterClick(course.id)}
-                    className="w-full font-sans font-semibold py-3 rounded-xl transition-all duration-300 text-white hover:shadow-[0_4px_20px_rgba(76,61,25,0.35)] hover:brightness-110 active:scale-95 tracking-wide"
-                    style={{ backgroundColor: "#354024" }}
+                    className="w-full font-sans font-semibold py-3 rounded-xl transition-all duration-300 text-white hover:shadow-[0_4px_20px_rgba(100,49,62,0.35)] hover:brightness-110 active:scale-95 tracking-wide"
+                    style={{ backgroundColor: "#64313E" }}
                   >
                     Đăng ký khóa này
                   </button>

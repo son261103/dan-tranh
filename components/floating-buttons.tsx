@@ -22,7 +22,7 @@ function ZaloIcon({ className }: { className?: string }) {
         fill="white"
         fontSize="16"
         fontWeight="bold"
-        fontFamily="var(--font-main), 'Oleo Script', sans-serif"
+        fontFamily="var(--font-main), 'Be Vietnam Pro', sans-serif"
       >
         Z
       </text>
@@ -61,7 +61,7 @@ export function FloatingButtons() {
             fill="white"
             fontSize="12"
             fontWeight="800"
-            fontFamily="var(--font-main), 'Oleo Script', sans-serif"
+            fontFamily="var(--font-main), 'Be Vietnam Pro', sans-serif"
           >
             Zalo
           </text>
@@ -75,8 +75,8 @@ export function FloatingButtons() {
         animate={{ scale: [1, 1.08, 1] }}
         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
         whileHover={{ scale: 1.15 }}
-        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(76,61,25,0.5)]"
-        style={{ backgroundColor: "#354024" }}
+        className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(100,49,62,0.5)]"
+        style={{ backgroundColor: "#64313E" }}
       >
         <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" aria-hidden="true" />
       </motion.a>
@@ -84,7 +84,7 @@ export function FloatingButtons() {
       {/* Tooltip label on hover */}
       <div
         className="absolute right-16 bottom-1 font-sans text-xs whitespace-nowrap px-2 py-1 rounded-md opacity-0 pointer-events-none"
-        style={{ backgroundColor: "#4C3D19", color: "#F4F7EE" }}
+        style={{ backgroundColor: "#64313E", color: "#F7F2F4" }}
       />
     </div>
   )

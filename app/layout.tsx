@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
-import { Oleo_Script } from 'next/font/google'
+import { Be_Vietnam_Pro } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const oleoScript = Oleo_Script({
-  subsets: ['latin'],
+const beVietnamPro = Be_Vietnam_Pro({
+  subsets: ['latin', 'vietnamese'],
   variable: '--font-main',
   display: 'swap',
-  weight: ['400', '700'],
+  weight: ['400', '500', '600', '700', '800'],
 })
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: '#354024',
+  themeColor: '#64313E',
   width: 'device-width',
   initialScale: 1,
 }
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={`${oleoScript.variable} font-sans antialiased`}>
+      <body className={`${beVietnamPro.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

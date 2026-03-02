@@ -4,72 +4,74 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Cafe Noir + Kombu Green + Bright Sage */
-  --background: #F4F7EE;
-  --foreground: #354024;
+  /* Burgundy + Pastel Blue */
+  --background: #F2F8FC;
+  --foreground: #4A2A34;
   --card: #FFFFFF;
-  --card-foreground: #354024;
+  --card-foreground: #4A2A34;
   --popover: #FFFFFF;
-  --popover-foreground: #354024;
-  --primary: #354024;
-  --primary-foreground: #F4F7EE;
-  --secondary: #E6EEDB;
-  --secondary-foreground: #354024;
-  --muted: #EEF3E6;
-  --muted-foreground: #5A6645;
-  --accent: #4C3D19;
-  --accent-foreground: #F4F7EE;
+  --popover-foreground: #4A2A34;
+  --primary: #64313E;
+  --primary-foreground: #F7F2F4;
+  --secondary: #C1DBE8;
+  --secondary-foreground: #4A2A34;
+  --muted: #E8F2F8;
+  --muted-foreground: #6F4A56;
+  --accent: #8B4A5A;
+  --accent-foreground: #F7F2F4;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: #F4F7EE;
-  --border: #CED9BF;
-  --input: #E6EEDB;
-  --ring: #354024;
+  --destructive-foreground: #F7F2F4;
+  --border: #AAC2CF;
+  --input: #DDECF4;
+  --ring: #64313E;
   --radius: 0.75rem;
 
   /* Brand tokens */
-  --moss-dark: #354024;
-  --moss-medium: #4C3D19;
-  --jade: #354024;
-  --gold: #4C3D19;
-  --cream: #F4F7EE;
-  --cream-dark: #E6EEDB;
+  --moss-dark: #64313E;
+  --moss-medium: #8B4A5A;
+  --jade: #64313E;
+  --gold: #C1DBE8;
+  --cream: #F2F8FC;
+  --cream-dark: #DDECF4;
   --parchment: #FFFFFF;
-  --text-dark: #354024;
-  --text-light: #F4F7EE;
+  --text-dark: #4A2A34;
+  --text-light: #F7F2F4;
+  --text-highlight: #A23A5A;
+  --text-soft-blue: #3F6D83;
 
-  --sidebar: #354024;
-  --sidebar-foreground: #F4F7EE;
-  --sidebar-primary: #4C3D19;
-  --sidebar-primary-foreground: #F4F7EE;
-  --sidebar-accent: #4A5835;
-  --sidebar-accent-foreground: #F4F7EE;
-  --sidebar-border: #4A5835;
-  --sidebar-ring: #4C3D19;
+  --sidebar: #64313E;
+  --sidebar-foreground: #F7F2F4;
+  --sidebar-primary: #8B4A5A;
+  --sidebar-primary-foreground: #F7F2F4;
+  --sidebar-accent: #C1DBE8;
+  --sidebar-accent-foreground: #4A2A34;
+  --sidebar-border: #AAC2CF;
+  --sidebar-ring: #8B4A5A;
 }
 
 .dark {
-  --background: #F4F7EE;
-  --foreground: #354024;
+  --background: #F2F8FC;
+  --foreground: #4A2A34;
   --card: #FFFFFF;
-  --card-foreground: #354024;
+  --card-foreground: #4A2A34;
   --popover: #FFFFFF;
-  --popover-foreground: #354024;
-  --primary: #354024;
-  --primary-foreground: #F4F7EE;
-  --secondary: #E6EEDB;
-  --secondary-foreground: #354024;
-  --muted: #EEF3E6;
-  --muted-foreground: #5A6645;
-  --accent: #4C3D19;
-  --accent-foreground: #F4F7EE;
-  --border: #CED9BF;
-  --input: #E6EEDB;
-  --ring: #354024;
+  --popover-foreground: #4A2A34;
+  --primary: #64313E;
+  --primary-foreground: #F7F2F4;
+  --secondary: #C1DBE8;
+  --secondary-foreground: #4A2A34;
+  --muted: #E8F2F8;
+  --muted-foreground: #6F4A56;
+  --accent: #8B4A5A;
+  --accent-foreground: #F7F2F4;
+  --border: #AAC2CF;
+  --input: #DDECF4;
+  --ring: #64313E;
 }
 
 @theme inline {
-  --font-sans: var(--font-main), 'Oleo Script', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-main), 'Oleo Script', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-main), 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-main), 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, 'Courier New', monospace;
   --color-moss-dark: var(--moss-dark);
   --color-moss-medium: var(--moss-medium);
@@ -123,6 +125,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-main), 'Oleo Script', ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-main), 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
+  }
+  a {
+    text-decoration: none;
   }
 }
